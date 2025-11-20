@@ -13,8 +13,8 @@ app = Flask(__name__)
 # Configuration
 API_KEY = "Kg4yZ5T4QGXReGhZPik3gYD9kVjFPcOQfxqtVJ7gbHOk-Ks4"
 COINDESK_API_KEY = "6c711a4a03b4884ffc3df8016bed4b72ae768910a9130442037eecef766ca50b"
-DB_PATH = os.path.expanduser("~/Desktop/crypto-tracker/crypto_prices.db")
-CREDENTIALS_PATH = os.path.expanduser("~/Desktop/crypto-tracker/credentials.json")
+DB_PATH = os.path.join(os.getcwd(), "crypto_prices.db")
+CREDENTIALS_PATH = os.path.join(os.getcwd(), "credentials.json")
 SHEET_NAME = "Historical Prices - Crypto, SP500, CD5"
 
 # Ticker to Messari slug mapping
